@@ -229,4 +229,8 @@ font-weight: normal;
   #contact dd{
     width: 100%;
   }
+  /* FOOTER */
+  #footer{
+  margin: 0;
+  }
 }
