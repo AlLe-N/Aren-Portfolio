@@ -226,6 +226,9 @@ font-weight: normal;
   #contact dl{
     flex-direction: column;
   }
+  #contact dt{
+    text-align: left;
+  }
   #contact dd{
     width: 100%;
   }
