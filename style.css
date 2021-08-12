@@ -133,7 +133,7 @@ font-weight: normal;
 #contact{
   text-align: center;
   padding: 100px;
-  background-image: url('../sharon-mccutcheon-eMP4sYPJ9x0-unsplash.jpg');
+  background-image: url('./sharon-mccutcheon-eMP4sYPJ9x0-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -191,4 +191,42 @@ font-weight: normal;
   color: white;
   height: 40px;
   padding-top: 10px;
+}
+/* レスポンシブデザイン */
+@media screen and (max-width: 600px){
+  /* HEADER */
+  #header ul {
+    display: none;
+  }
+  /* ABOUT */
+  .about-content{
+    flex-direction: column-reverse;
+  }
+  /* SKILL */
+  .skill-content{
+  flex-direction: column;
+  padding: 0 40px;
+  }
+  .skill-content article{
+  width: 100%;
+    margin: 20px 0;
+  }
+  /* WORKS */
+  #work{
+    margin-bottom: 0;
+  }
+  .work-content{
+    flex-direction: column;
+  }
+  .work-content article{
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  /* CONTACT */
+  #contact dl{
+    flex-direction: column;
+  }
+  #contact dd{
+    width: 100%;
+  }
 }
