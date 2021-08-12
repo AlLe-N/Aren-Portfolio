@@ -182,9 +182,6 @@ font-weight: normal;
 }
 
 /* FOOTER */
-#footer{
-  margin-top: 100px;
-}
 .copywrite{
   text-align: center;
   background-color: #333;
@@ -228,9 +225,5 @@ font-weight: normal;
   }
   #contact dd{
     width: 100%;
-  }
-  /* FOOTER */
-  #footer{
-  margin: 0;
   }
 }
