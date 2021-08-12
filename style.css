@@ -1,0 +1,194 @@
+@charset "utf-8";
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 0.9rem;
+  font-family: luxus-brut, cursive;
+	font-style: italic; 
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+li {
+  list-style: none;
+}
+img{
+  width: 100%;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+#header {
+  background-color: rgb(63, 63, 63,0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+#header ul{
+  display: flex;
+}
+#header li{
+  padding: 0 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#header li a:hover{
+  opacity: 0.8;
+  color: aqua;
+}
+
+.header-title{
+color: #fff;
+font-weight: normal;
+}
+
+/* MAIMVISUAL */
+#main-visual {
+  background-image: url(../img/drew-coffman-jUOaONoXJQk-unsplash.jpg);
+  min-height: 700px;
+  text-align: center;
+  align-items: center;
+  padding-top: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-title {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.884);
+  font-weight: normal;
+}
+
+.menu-title {
+  margin-bottom: 40px;
+  border-bottom: solid 3px #333;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+/* ABOUT */
+#about{
+  text-align: center;
+  padding: 100px 0;
+}
+.about-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.about-content img{
+  width: 30%;
+}
+.about-content article{
+  width: 60%;
+}
+
+
+
+
+/* SKILL */
+#skill{
+  text-align: center;
+  padding-top: 100px;
+  background-image: url(../img/dung-trieu-DVA6kQNdUWs-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+.skill-content{
+  display: flex;
+}
+.skill-content article{
+  width: 33%;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.856);
+}
+.skill-content img{
+  padding: 30px 50px;
+}
+
+/* WORK */
+#work{
+  text-align: center;
+  padding: 100px 0;
+}
+.work-content{
+  display: flex;
+}
+.work-content article{
+  width: 33%;
+  padding: 0 20px;
+}
+
+/* CONTACT */
+#contact{
+  text-align: center;
+  padding: 100px;
+  background-image: url(../img/kari-shea-pJn9WhMqFIs-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-content{
+  max-width: 700px;
+}
+
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+  padding-top: 10px;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  background-color: rgba(255, 255, 255, 0.712);
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  border-radius: 10px;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+#contact .button input:hover {
+  background: rgb(70, 70, 70);
+}
+
+/* FOOTER */
+#footer{
+  margin-top: 100px;
+}
+.copywrite{
+  text-align: center;
+  background-color: #333;
+  color: white;
+  height: 40px;
+  padding-top: 10px;
+}
