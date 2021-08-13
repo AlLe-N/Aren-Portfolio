@@ -354,7 +354,7 @@ display: none;
   }
   /* WORKS */
   #work{
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .work-content{
     flex-direction: column;
