@@ -133,10 +133,11 @@ display: none;
 .service-content p{
   text-align: left;
   padding: 0 20px 20px;
+  font-size: 1.1rem;
 }
 .service-content h3{
   padding-bottom: 10px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .service-content img{
   padding: 30px 50px;
