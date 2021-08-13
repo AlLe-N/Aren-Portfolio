@@ -294,7 +294,7 @@ margin-right: 30px;
 }
 .menu-content {
   width: 100%;
-  height: 23%;
+  height: 100%;
   position: fixed;
   top: -100%;
   left: 0;
