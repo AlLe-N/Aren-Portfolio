@@ -364,6 +364,9 @@ display: none;
     margin-bottom: 80px;
   }
   /* CONTACT */
+  #contact {
+    padding: 100px 50px;
+  }
   #contact dl{
     flex-direction: column;
   }
