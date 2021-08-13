@@ -107,7 +107,7 @@ display: none;
 }
 .about-content img{
   width: 30%;
-  border: black solid 1px;
+  border: rgba(207, 207, 207, 0.637) solid 1px;
 }
 .about-content article{
   width: 60%;
@@ -331,6 +331,13 @@ display: none;
   /* ABOUT */
   .about-content{
     flex-direction: column-reverse;
+  }
+  .about-content img{
+    width: 40%;
+    margin-bottom: 50px;
+  }
+  .about-content article{
+    width: 100%;
   }
   /* service */
   .service-content{
