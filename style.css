@@ -94,6 +94,9 @@ margin-right: 30px;
   justify-content: center;
   font-size: 1.2rem;
 }
+.about-content p{
+  text-align: left;
+}
 .about-content img{
   width: 30%;
 }
