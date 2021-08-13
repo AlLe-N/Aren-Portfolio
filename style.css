@@ -9,7 +9,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
 }
 li {
   list-style: none;
@@ -41,14 +41,23 @@ img{
   font-size: 1.2rem;
   font-weight: bold;
 }
+#header li a{
+  color: #ffffff;
+}
 #header li a:hover{
   opacity: 0.8;
   color: aqua;
 }
-
-.header-title{
+.header-title a{
 color: #fff;
 font-weight: normal;
+}
+.hamburger-menu{
+display: none;
+} 
+#menu-btn-check {
+  /* display: none; */
+  margin-right: 30px;
 }
 
 /* MAIMVISUAL */
@@ -92,9 +101,6 @@ font-weight: normal;
   width: 60%;
 }
 
-
-
-
 /* SKILL */
 #skill{
   text-align: center;
@@ -124,6 +130,10 @@ font-weight: normal;
 .work-content{
   display: flex;
 }
+#work img{
+  margin-bottom: 10px;
+  border: 1px solid rgba(190, 190, 190, 0.705);
+}
 .work-content article{
   width: 33%;
   padding: 0 20px;
@@ -133,7 +143,7 @@ font-weight: normal;
 #contact{
   text-align: center;
   padding: 100px;
-  background-image:url('./sharon-mccutcheon-eMP4sYPJ9x0-unsplash.jpg');
+  background-image: url('./sharon-mccutcheon-eMP4sYPJ9x0-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -189,12 +199,114 @@ font-weight: normal;
   height: 40px;
   padding-top: 10px;
 }
+
 /* レスポンシブデザイン */
 @media screen and (max-width: 600px){
   /* HEADER */
-  #header ul {
+  #header .first-menu {
     display: none;
   }
+  .hamburger-menu {
+    display: block;
+  } 
+  .menu-list:active ~ .menu-content{
+    top: -100%;
+  }
+  .menu-btn {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    display: flex;
+    height: 40px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+  }
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(225deg);
+  transition: all 0.5s;
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-225deg);
+  transition: all 0.5s;
+}
+
+.menu-content {
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #44cdff8e;
+}
+.menu-content ul {
+    padding: 40px 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #0c0c0c;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#050404;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+.menu-content {
+  width: 100%;
+  height: 23%;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 80;
+  background-color: rgb(63, 63, 63,0.9);
+  transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+  top: 0;/*メニューを画面内へ*/
+}
+
+
   /* ABOUT */
   .about-content{
     flex-direction: column-reverse;
