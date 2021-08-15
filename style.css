@@ -260,7 +260,7 @@ display: none;
     border-radius: 3px;
     background-color: #ffffff;
     position: absolute;
-　　transition: all 0.5s;
+    transition: all 0.5s;
 }
 .menu-btn span:before {
     bottom: 8px;
