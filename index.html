@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aren's Portfolio</title>
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -26,25 +26,26 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger-menu">
-        <input type="checkbox" id="menu-btn-check">
-        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <button class="menu-btn">
+          <span></span>
+        </button>
         <!--ここからメニュー-->
         <div class="menu-content">
             <ul>
-             　 <li>
-                 　 <a href="#header" class="menu-list">Top</a>
-            　  <li>
-                <li>
-                    <a href="#about" class="menu-list">About me</a>
-                <li>
-                    <a href="#service" class="menu-list">Service</a>
-                </li>
-                <li>
-                    <a href="#work" class="menu-list">Work</a>
-                </li>
-                <li>
-                    <a href="#contact" class="menu-list">Contact</a>
-                </li>
+              <li>
+                  <a href="#header" class="menu-list">Top</a>
+              <li>
+              <li>
+                  <a href="#about" class="menu-list">About me</a>
+              <li>
+                  <a href="#service" class="menu-list">Service</a>
+              </li>
+              <li>
+                  <a href="#work" class="menu-list">Work</a>
+              </li>
+              <li>
+                  <a href="#contact" class="menu-list">Contact</a>
+              </li>
             </ul>
         </div>
         <!--ここまでメニュー-->
@@ -63,7 +64,7 @@
         <article>
           <h3>初めまして！ あれん と申します！</h3>  
           <p>
-            <span>責任感</span>、<span>継続</span>をモットーに日々、活動をしています。クライアント様とのコミュニケーションを大切にし、期待に応えられるよう、精一杯頑張ります。わからない箇所は調べ、学習し、責任を持って最後まで必ずやり遂げます！
+            <span>責任感</span>、<span>継続</span>をモットーに日々、活動をしています。クライアント様とのコミュニケーションを大切にし、期待に応えられるよう、精一杯頑張ります。わからない箇所があっても、調べ、学習し、責任を持って最後まで必ずやり遂げます！
           </p>
         </article>
         <img src="./image0.png" alt="私の画像">
@@ -83,7 +84,8 @@
         <article>
           <img src="./icon_113831_256.png" alt="WordPress">
           <h3>WordPress</h3>
-          <p>WordPressを使用してオリジナルテーマを作成します。また、既存静的サイトのWordPress化も可能です。
+          <p>WordPressを使用してオリジナルテーマを作成します。また、既存静的サイトのWordPress化も可能です。<br>
+          WordPress
           </p>
         </article>
         <article>
@@ -135,7 +137,7 @@
 
     <p class="copywrite"><small>&copy;Aren's Portfolio 2021</small></p>
   </footer>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
