@@ -260,6 +260,7 @@ display: none;
     border-radius: 3px;
     background-color: #ffffff;
     position: absolute;
+　　transition: all 0.5s;
 }
 .menu-btn span:before {
     bottom: 8px;
@@ -267,15 +268,15 @@ display: none;
 .menu-btn span:after {
     top: 8px;
 }
-#menu-btn-check:checked ~ .menu-btn span {
+.menu-btn.btn-open span{
   background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
 }
-#menu-btn-check:checked ~ .menu-btn span::before {
+.menu-btn.btn-open span::before{
   bottom: 0;
   transform: rotate(225deg);
   transition: all 0.5s;
 }
-#menu-btn-check:checked ~ .menu-btn span::after {
+.menu-btn.btn-open span::after{
   top: 0;
   transform: rotate(-225deg);
   transition: all 0.5s;
