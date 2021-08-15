@@ -287,7 +287,7 @@ display: none;
     display: flex;
     flex-direction: column;
 }
-.menu-content ul li {
+.menu-content li a{
     border-bottom: solid 1px #0c0c0c;
 }
 .menu-content ul li a {
